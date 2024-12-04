@@ -1,0 +1,23 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "esModuleInterop": true,  // Bu satır, Swiper gibi ES modüllerini düzgün şekilde import etmenizi sağlar.
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["swiper"]
+  },
+  "include": [
+    "nuxt.config.ts",
+    "pages/**/*.vue",
+    "components/**/*.vue",
+    "layouts/**/*.vue",
+    "composables/**/*.ts",
+    "plugins/**/*.ts",
+    "store/**/*.ts"
+  ]
+}
